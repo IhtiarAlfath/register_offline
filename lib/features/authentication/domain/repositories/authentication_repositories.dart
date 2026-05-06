@@ -11,13 +11,4 @@ abstract class AuthenticationRepositories {
   Future<Either<Failure, DataLogin>> getDataLogin();
   Future<Either<Failure, Success>> logout();
 
-  Future<Either<Failure, Success>> cacheDataLoginParameter(
-      DataLoginParameter dataLoginParameter);
-  Future<Either<Failure, DataLoginParameter>> getCacheDataLoginParameter();
-  Future<Either<Failure, Success>> deleteCacheDataLoginParameter();
-
-  Future<Either<Failure, Success>> cacheRememberMe(
-      DataLoginParameter dataLoginParameter);
-  Future<Either<Failure, DataLoginParameter?>> getCacheRememberMe();
-  Future<Either<Failure, Success>> deleteCacheRememberMe();
 }

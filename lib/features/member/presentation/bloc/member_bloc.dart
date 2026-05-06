@@ -2,7 +2,13 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:register_offline/core/utils/logger.dart';
 import 'package:register_offline/features/member/domain/entities/member.dart';
-import 'package:register_offline/features/member/domain/usecases/member_usecases.dart';
+import 'package:register_offline/features/member/domain/usecases/delete_member_local.dart';
+import 'package:register_offline/features/member/domain/usecases/get_draft_members.dart';
+import 'package:register_offline/features/member/domain/usecases/get_remote_members.dart';
+import 'package:register_offline/features/member/domain/usecases/save_member_local.dart';
+import 'package:register_offline/features/member/domain/usecases/sync_all_drafts.dart';
+import 'package:register_offline/features/member/domain/usecases/update_member_local.dart';
+import 'package:register_offline/features/member/domain/usecases/upload_member.dart';
 
 part 'member_state.dart';
 part 'member_event.dart';

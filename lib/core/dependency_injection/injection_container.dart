@@ -19,7 +19,13 @@ import 'package:register_offline/features/member/data/datasource/member_datasour
 import 'package:register_offline/features/member/data/models/member_local_model.dart';
 import 'package:register_offline/features/member/data/repositories/member_repositories_impl.dart';
 import 'package:register_offline/features/member/domain/repositories/member_repositories.dart';
-import 'package:register_offline/features/member/domain/usecases/member_usecases.dart';
+import 'package:register_offline/features/member/domain/usecases/delete_member_local.dart';
+import 'package:register_offline/features/member/domain/usecases/get_draft_members.dart';
+import 'package:register_offline/features/member/domain/usecases/get_remote_members.dart';
+import 'package:register_offline/features/member/domain/usecases/save_member_local.dart';
+import 'package:register_offline/features/member/domain/usecases/sync_all_drafts.dart';
+import 'package:register_offline/features/member/domain/usecases/update_member_local.dart';
+import 'package:register_offline/features/member/domain/usecases/upload_member.dart';
 import 'package:register_offline/features/member/presentation/bloc/member_bloc.dart';
 import 'package:register_offline/features/profile/data/datasource/profile_datasource_remote.dart';
 import 'package:register_offline/features/profile/data/repositories/profile_repositories_impl.dart';
